@@ -25,7 +25,7 @@ export default function About() {
   </p>
   <p>
     While I may be at the start of my development career, my previous roles in 
-    <span className="font-medium">customer service, sales, teaching, management, and designing</span> have equipped me with valuable skills.
+    <span className="font-medium"> customer service, sales, teaching, management, and designing</span> have equipped me with valuable skills.
     <span className="italic">My problem-solving and conflict resolution abilities</span> allow me to navigate challenges in coding projects. 
     I excel in <span className="underline">team settings</span> due to my strong communication skills. 
     I also have a keen sense of <span className="font-medium">project management</span>.

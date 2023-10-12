@@ -62,52 +62,7 @@ export const experiencesData = [
     date: "2022 - 2023",
   },
 ] as const;
-/* 
-export const projectsData = [
-  {
-    title: "Geo Papel",
-    description:
-      "Worked as a full-stack developer on this startup project for 2 months. Develop half of the front-end and full back-end with  Notion API Integration.",
-    tags: ["React", "Chakra UI", "Node.js", "Express", "Notion API", ],
-    imageUrl: geopapel,
-  },
-  {
-    title: "Mandala App",
-    description:
-      "Developed an app potentially for advertising and selling hand-colored mandalas by my wife using various painting techniques.",
-    tags: ["React", "Material UI", "React Router", "Firebase"],
-    imageUrl: mandalaApp,
-  },
-  {
-    title: "Text Encryption App",
-    description:
-    "Created an app for secure message exchange with custom encryption keys. Managed the project using agile methods and Trello.",
-    tags: ["Encryption", "JavaScript", "Agile Development", "Trello"],
-    imageUrl: textEncryptionApp,
-},
-{
-  title: "Trading Journal",
-  description:
-    "Developed a trading tools platform that includes a position sizing calculator and trading journal. Created as an academic exercise for the Coderhouse JavaScript course.",
-  tags: ["JavaScript", "Trading", "Calculator", "Bootstrap"],
-  imageUrl: tradingTX,
-},
-{
-  title: "Mis Apuntes de Programación",
-  description:
-    "Created a website to share notes, toolkits, and reflections from my Web Development course. Includes a 'Who Am I?' section and a contact page.",
-  tags: ["Web Development", "HTML", "SASS", "Bootstrap"],
-  imageUrl: misApuntesDeProgramacion,
-},
-{
-  title: "E-commerce REST API",
-  description:
-    "Developed a REST API for managing user, product, and cart entities in an e-commerce platform.",
-  tags: ["REST API", "MongoDB", "Authentication", "Express", "Testing", "Swagger"],
-  imageUrl: ecommerceRestApi, 
-},
 
-] as const; */
 
 export const projectsData = [
   {

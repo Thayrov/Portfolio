@@ -62,7 +62,7 @@ export const experiencesData = [
     date: "2022 - 2023",
   },
 ] as const;
-
+/* 
 export const projectsData = [
   {
     title: "Geo Papel",
@@ -107,21 +107,130 @@ export const projectsData = [
   imageUrl: ecommerceRestApi, 
 },
 
+] as const; */
+
+export const projectsData = [
+  {
+    title: "Geo Papel",
+    description:
+      "Worked as a full-stack developer on this startup project for 2 months. Develop half of the front-end and full back-end with  Notion API Integration.",
+    tags: ["React", "Chakra UI", "Node.js", "Express", "Notion API", ],
+    imageUrl: geopapel,
+    repo: "https://github.com/Thayrov/geopapel",
+    link: "https://www.geopapel.com.ar",
+  },
+  {
+    title: "Mandala App",
+    description:
+      "Developed an app potentially for advertising and selling hand-colored mandalas by my wife using various painting techniques.",
+    tags: ["React", "Material UI", "React Router", "Firebase"],
+    imageUrl: mandalaApp,
+    repo: "https://github.com/Thayrov/mandala-app",
+    link: "https://thayrov.github.io/mandala-app/",
+  },
+  {
+    title: "Text Encryption App",
+    description:
+    "Created an app for secure message exchange with custom encryption keys. Managed the project using agile methods and Trello.",
+    tags: ["Encryption", "JavaScript", "Agile Development", "Trello"],
+    imageUrl: textEncryptionApp,
+    repo: "https://github.com/Thayrov/ChallengeONE_EncriptadorTexto",
+    link: "https://thayrov.github.io/ChallengeONE_EncriptadorTexto/"
+  },
+  {
+    title: "Trading Journal",
+    description:
+      "Developed a trading tools platform that includes a position sizing calculator and trading journal. Created as an academic exercise for the Coderhouse JavaScript course.",
+    tags: ["JavaScript", "Trading", "Calculator", "Bootstrap"],
+    imageUrl: tradingTX,
+    repo: "https://github.com/Thayrov/TradingJournal",
+    link: "https://thayrov.github.io/TradingJournal/"
+  },
+  {
+    title: "Mis Apuntes de Programación",
+    description:
+      "Created a website to share notes, toolkits, and reflections from my Web Development course. Includes a 'Who Am I?' section and a contact page.",
+    tags: ["Web Development", "HTML", "SASS", "Bootstrap"],
+    imageUrl: misApuntesDeProgramacion,
+    repo: "https://github.com/Thayrov/apuntes_de_programacion",
+    link: "https://thayrov.github.io/apuntes_de_programacion/"
+  },
+  {
+    title: "E-commerce REST API",
+    description:
+      "Developed a REST API for managing user, product, and cart entities in an e-commerce platform.",
+    tags: ["REST API", "MongoDB", "Authentication", "Express", "Testing", "Swagger"],
+    imageUrl: ecommerceRestApi, 
+    repo: "https://github.com/Thayrov/Backend",
+    link: "https://thayrov-backend-dev.fl0.io/"
+  },
+
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
+  // Front-end
+  "HTML5",
+  "CSS3",
+  "SASS",
+  "Bootstrap",
   "JavaScript",
   "React",
   "React Native",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "MongoDB",
-  "MySQL",
   "Redux",
+  "SweetAlert2",
+
+  // Back-end
+  "Node.js",
   "Express",
-  "OCI",
+  "Mongo",
+  "MySQL",
+  "Firebase",
+  "Json-Server",
+  "Passport",
+  "Socket.io",
+
+  // DevOps
   "Docker",
+  "OCI",
+  "PM2",
+  "Nodemon",
+
+  // Testing
+  "Chai",
+  "Mocha",
+  "Supertest",
+
+  // Version Control
+  "Git",
+  "Github",
+
+  // Code Quality
+  "ESLint",
+  "Prettier",
+  
+  // API and Data Handling
+  "Axios",
+  "Cors",
+  "Dotenv",
+
+  // Middleware and Templates
+  "Express-Handlebars",
+  "Express-Session",
+  "Express-Compression",
+
+  // Utilities
+  "Faker",
+  "Mongoose",
+  "Multer",
+  "Nodemailer",
+  "Swagger",
+  "Winston",
+  "Cross-Env",
+  
+  // UI/UX Design
+  "Balsamiq",
+
+  // Automation and Notifications
+  "Concurrently",
+  "Bcrypt",
 ] as const;

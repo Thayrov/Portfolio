@@ -1,10 +1,10 @@
 "use client";
 
-import React from "react";
-import { motion } from "framer-motion";
-import { links } from "@/lib/data";
 import Link from "next/link";
+import React from "react";
 import clsx from "clsx";
+import { links } from "@/lib/data";
+import { motion } from "framer-motion";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Header() {

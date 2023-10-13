@@ -4,6 +4,8 @@ import ActiveSectionContextProvider from "@/context/active-section-context";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { Inter } from "next/font/google";
+import { LangProvider } from "@/context/lang-context";
+import LangSwitch from "@/components/lang-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import ThemeSwitch from "@/components/theme-switch";
 import { Toaster } from "react-hot-toast";
@@ -30,12 +32,15 @@ export default function RootLayout({
 
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
-            <Header />
-            {children}
-            <Footer />
+          <LangProvider>
+              <Header />
+              {children}
+              <Footer />
 
-            <Toaster position="top-right" />
-            <ThemeSwitch />
+              <Toaster position="top-right" />
+              <ThemeSwitch />
+              {/* <LangSwitch />  */}
+            </LangProvider>
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
       </body>

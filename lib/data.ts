@@ -36,6 +36,7 @@ export const links = [
   },
 ] as const;
 
+
 export const experiencesData = [
   {
     title: "Full-Stack Developer Student",

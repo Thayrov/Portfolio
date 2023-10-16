@@ -2,6 +2,8 @@
 
 import React, { createContext, useContext, useState } from 'react';
 
+import { useActiveSectionContext } from './active-section-context';
+
 type Language = 'en' | 'es';
 
 type LangContextType = {
@@ -18,13 +20,18 @@ type LangProviderProps = {
 export const LangProvider: React.FC<LangProviderProps> = ({ children }) => {
   const [lang, setLang] = useState<Language>('es');
 
+  const { activeSection, setActiveSection } = useActiveSectionContext(); // import this from the active section context
+
   const toggleLang = () => {
     if (lang === 'es') {
       setLang('en');
+      setActiveSection(activeSection);
     } else {
       setLang('es');
+      setActiveSection(activeSection);
     }
   };
+
 
   return (
     <LangContext.Provider value={{ lang, toggleLang }}>

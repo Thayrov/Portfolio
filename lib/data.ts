@@ -9,7 +9,7 @@ import misApuntesDeProgramacion from "@/public/misApuntesDeProgramacion.png";
 import textEncryptionApp from "@/public/textEncryptionApp.png";
 import tradingTX from "@/public/tradingTX.png";
 
-export const links = [
+/* export const links = [
   {
     name: "Home",
     hash: "#home",
@@ -34,32 +34,59 @@ export const links = [
     name: "Contact",
     hash: "#contact",
   },
-] as const;
+] as const; */
+
+export const navigationLinks = {
+  en: [
+    { name: "Home", hash: "#home" },
+    { name: "About", hash: "#about" },
+    { name: "Projects", hash: "#projects" },
+    { name: "Skills", hash: "#skills" },
+    { name: "Experience", hash: "#experience" },
+    { name: "Contact", hash: "#contact" },
+  ],
+  es: [
+    { name: "Inicio", hash: "#home" },
+    { name: "Acerca de", hash: "#about" },
+    { name: "Proyectos", hash: "#projects" },
+    { name: "Habilidades", hash: "#skills" },
+    { name: "Experiencia", hash: "#experience" },
+    { name: "Contacto", hash: "#contact" },
+  ],
+};
 
 
 export const experiencesData = [
   {
-    title: "Full-Stack Developer Student",
-    location: "Buenos Aires, Argentina (Remote)",
-    description:
-      "I graduated after 1 year of studying. I immediately found a job as a front-end developer, ended up deploying a back-end as well.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2023",
-  },
-  {
     title: "Full Stack Developer",
     location: "Buenos Aires, Argentina (Remote)",
     description:
-      'Participated in a team of 5 (UX/UI Designers, Developers, and Community Manager) to launch the landing page for "Geo Papel". Used React (Vite and ChakraUI) for the interface; created a backend with Node/Express, integrating the Notion API for code-free edits, and managed deployment on cPanel',
+    'Participated in a team of 5 (UX/UI Designers, Developers, and Community Manager) to launch the landing page for "Geo Papel". Used React (Vite and ChakraUI) for the interface; created a backend with Node/Express, integrating the Notion API for code-free edits, and managed deployment on cPanel',
     icon: React.createElement(CgWorkAlt),
     date: "2023",
+  },
+  {
+    title: "Full-Stack Developer Student",
+    location: "Coderhouse (Remote)",
+    description:
+      "I graduated after 1 year of studying. I immediately found a job as a front-end developer, ended up deploying a back-end as well.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2022 - 2023",
   },
   {
     title: "Algorithmic Trader",
     location: "Morelia, México (Remote)",
     description:
       "Developed a backtester in Pine Script to analyze historical results of automated trading strategies",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(CgWorkAlt),
+    date: "2022 - 2023",
+  },
+  {
+    title: "Oracle Next Education Student",
+    location: "Oracle & Alura Latam (Remote)",
+    description:
+    "Graduated from Oracle Next Education (ONE) program; Acquired in-depth knowledge in front-end development using React. Gained foundational skills in MySQL and Oracle Cloud Infrastructure (OCI). Honed my expertise in Python, specifically for Data Science applications.",
+    icon: React.createElement(LuGraduationCap),
     date: "2022 - 2023",
   },
 ] as const;
@@ -144,6 +171,7 @@ export const skillsData = [
   "Json-Server",
   "Passport",
   "Socket.io",
+  "Python",
 
   // DevOps
   "Docker",

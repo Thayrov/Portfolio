@@ -39,7 +39,7 @@ export default function RootLayout({
 
               <Toaster position="top-right" />
               <ThemeSwitch />
-              {/* <LangSwitch />  */}
+              <LangSwitch /> 
             </LangProvider>
           </ActiveSectionContextProvider>
         </ThemeContextProvider>

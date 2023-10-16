@@ -3,13 +3,18 @@
 import Link from "next/link";
 import React from "react";
 import clsx from "clsx";
-import { links } from "@/lib/data";
+// import { links } from "@/lib/data";
 import { motion } from "framer-motion";
+import { navigationLinks } from "@/lib/data";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useLang } from "@/context/lang-context";
 
 export default function Header() {
-  const { activeSection, setActiveSection, setTimeOfLastClick } =
-    useActiveSectionContext();
+  const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const { lang } = useLang();  // Get the current language.
+
+  const links = navigationLinks[lang];  // Use the current language to get the links.
+
 
   return (
     <header className="z-[999] relative">
@@ -33,7 +38,7 @@ export default function Header() {
                   "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",
                   {
                     "text-gray-950 dark:text-gray-200":
-                      activeSection === link.name,
+                    activeSection === link.name,
                   }
                 )}
                 href={link.hash}

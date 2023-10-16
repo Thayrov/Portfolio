@@ -1,6 +1,8 @@
-import { navigationLinks } from "./data";
+// import { navigationLinks } from "./data";
 
-// export type SectionName = (typeof links)[number]["name"];
+import { links } from "./data";
 
-type LinkNames = typeof navigationLinks['en'] | typeof navigationLinks['es'];
-export type SectionName = LinkNames[number]['name'];
+export type SectionName = (typeof links)[number]["name"];
+
+/* type LinkNames = typeof navigationLinks['en'] | typeof navigationLinks['es'];
+export type SectionName = LinkNames[number]['name'] */;

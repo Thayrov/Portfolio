@@ -1,4 +1,4 @@
-"use client";
+/* "use client";
 
 import { RiEnglishInput, RiTranslate2 } from "react-icons/ri";
 
@@ -17,3 +17,4 @@ export default function LangSwitch() {
     </button>
   );
 }
+ */

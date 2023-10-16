@@ -3,17 +3,17 @@
 import Link from "next/link";
 import React from "react";
 import clsx from "clsx";
-// import { links } from "@/lib/data";
+import { links } from "@/lib/data";
 import { motion } from "framer-motion";
-import { navigationLinks } from "@/lib/data";
+//import { navigationLinks } from "@/lib/data";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import { useLang } from "@/context/lang-context";
+//import { useLang } from "@/context/lang-context";
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-  const { lang } = useLang();  // Get the current language.
+/*   const { lang } = useLang();  // Get the current language.
 
-  const links = navigationLinks[lang];  // Use the current language to get the links.
+  const links = navigationLinks[lang];  / */
 
 
   return (

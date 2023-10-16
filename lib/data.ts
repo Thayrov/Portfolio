@@ -9,7 +9,7 @@ import misApuntesDeProgramacion from "@/public/misApuntesDeProgramacion.png";
 import textEncryptionApp from "@/public/textEncryptionApp.png";
 import tradingTX from "@/public/tradingTX.png";
 
-/* export const links = [
+export const links = [
   {
     name: "Home",
     hash: "#home",
@@ -34,9 +34,9 @@ import tradingTX from "@/public/tradingTX.png";
     name: "Contact",
     hash: "#contact",
   },
-] as const; */
+] as const;
 
-export const navigationLinks = {
+/* export const navigationLinks = {
   en: [
     { name: "Home", hash: "#home" },
     { name: "About", hash: "#about" },
@@ -53,7 +53,7 @@ export const navigationLinks = {
     { name: "Experiencia", hash: "#experience" },
     { name: "Contacto", hash: "#contact" },
   ],
-};
+}; */
 
 
 export const experiencesData = [

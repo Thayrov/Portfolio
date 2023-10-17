@@ -95,11 +95,21 @@ export const experiencesData = [
     location_es: "Oracle y Alura Latam (Remoto)",
     description_es:
     "Me gradué del programa Oracle Next Education (ONE); adquirí un conocimiento profundo en desarrollo front-end usando React. Obtuve habilidades fundamentales en MySQL e Infraestructura en la nube de Oracle (OCI). Perfeccioné mi experiencia en Python, específicamente para aplicaciones de Ciencia de Datos.",
-
-
     icon: React.createElement(LuGraduationCap),
     date: "2022 - 2023",
   },
+  {
+    title: "Diverse Roles",
+    location: "Caracas, Venezuela & Morelia, Mexico",
+    description:
+    'Gained extensive experience across multiple disciplines: customer service, sales, teaching, management, and designing. Recognized for exceptional sales achievements, led rebranding strategies, developed data management tools, and advised in academic performance.',
+    title_es: "Roles Diversos",
+    location_es: "Caracas, Venezuela & Morelia, México",
+    description_es:
+    'Adquirí una amplia experiencia en diversas disciplinas: servicio al cliente, ventas, enseñanza, gestión y diseño. Reconocido por logros excepcionales en ventas, lideré estrategias de rebranding, desarrollé herramientas de gestión de datos y asesoré en rendimiento académico.',
+    icon: React.createElement(CgWorkAlt),
+    date: "2005-2022",
+}
 ] as const;
 
 
@@ -176,6 +186,7 @@ export const skillsData = {
   programming: [
     "JavaScript",
     "TypeScript",
+    "Python",
   ],  
   frontend: [
     "HTML5",
@@ -201,7 +212,6 @@ export const skillsData = {
     "Json-Server",
     "Passport",
     "Socket.io",
-    "Python",
     "Bcrypt",
     "Axios",
     "Cors",
@@ -239,4 +249,11 @@ export const skillsData = {
     "Git",
     "Github",
   ],  
+  "soft Skills":[
+    "Analytical Thinking",
+    "Teamwork",
+    "Communication",
+    "Projects management",
+    "Results Oriented",
+  ],
 } as const;

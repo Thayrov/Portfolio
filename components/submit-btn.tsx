@@ -1,10 +1,11 @@
-import React from "react";
 import { FaPaperPlane } from "react-icons/fa";
+import React from "react";
 import { experimental_useFormStatus as useFormStatus } from "react-dom";
+import { useLang } from "@/context/lang-context";
 
 export default function SubmitBtn() {
   const { pending } = useFormStatus();
-
+  const {lang} = useLang()
   return (
     <button
       type="submit"
@@ -15,7 +16,7 @@ export default function SubmitBtn() {
         <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white"></div>
       ) : (
         <>
-          Submit{" "}
+          {lang ==='en' ?"Submit" : "Enviar"}{" "}
           <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />{" "}
         </>
       )}

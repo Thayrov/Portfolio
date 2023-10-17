@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 import Image from "next/image";
 import { projectsData } from "@/lib/data";
+import { useLang } from '@/context/lang-context';
 import { useRef } from "react";
 
 type ProjectProps = (typeof projectsData)[number];
@@ -12,6 +13,7 @@ type ProjectProps = (typeof projectsData)[number];
 export default function Project({
   title,
   description,
+  description_es,
   tags,
   imageUrl, repo, link
 }: ProjectProps) {
@@ -22,6 +24,7 @@ export default function Project({
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+  const { lang } = useLang(); 
 
   return (
     <motion.div
@@ -45,7 +48,7 @@ export default function Project({
               <FaExternalLinkAlt size={20} />
             </a>
           </div>
-          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">{description}</p>
+          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">{lang ==='en' ? description : description_es}</p>
         
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (

@@ -9,11 +9,13 @@ import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useLang } from "@/context/lang-context";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const { lang } = useLang(); 
 
   return (
     <section
@@ -63,11 +65,26 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Thayrov.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">1 and a half years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">the MERN stack</span>.
+      { lang ==='en' ?
+        (<div>
+        <p>
+        <span className="font-bold">Hello, I'm Thayrov.</span><br/> 
+        I'm a{" "}<span className="font-bold">full-stack developer</span> with{" "}
+        <span className="font-bold">1 and a half years</span> of experience.<br/>
+        I enjoy building <span className="italic">sites & apps</span>. <br/>
+        My focus is{" "}<span className="underline">the MERN stack</span>.
+        </p>
+      </div>) :
+      (<div>
+      <p>
+      <span className="font-bold">Hola, soy Thayrov.</span> <br/>
+      Soy un{" "} <span className="font-bold">desarrollador full-stack</span> con{" "}
+        <span className="font-bold">1 año y medio</span> de experiencia. <br/>
+        Me gusta construir <span className="italic">sitios y aplicaciones</span>. <br/>
+        Mi enfoque es{" "}<span className="underline">el stack MERN</span>.
+      </p>
+      </div>)
+      }
       </motion.h1>
 
       <motion.div
@@ -86,7 +103,7 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
+          {lang ==='en' ? 'Contact me here' : 'Contáctame aquí'}{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
@@ -95,7 +112,7 @@ export default function Intro() {
           href="/CV.pdf"
           download
         >
-          Download CV{" "}
+          {lang ==='en' ?'Download': 'Descargar'} CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 

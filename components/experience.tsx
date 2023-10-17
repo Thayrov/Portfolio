@@ -1,23 +1,27 @@
 "use client";
 
-import React from "react";
-import SectionHeading from "./section-heading";
+import "react-vertical-timeline-component/style.min.css";
+
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
+
+import React from "react";
+import SectionHeading from "./section-heading";
 import { experiencesData } from "@/lib/data";
+import { useLang } from "@/context/lang-context";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
   const { theme } = useTheme();
+  const { lang } = useLang(); 
 
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
-      <SectionHeading>My experience</SectionHeading>
+      <SectionHeading>{lang ==='en' ?'My experience':'Mi Experiencia'}</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
@@ -44,10 +48,10 @@ export default function Experience() {
                 fontSize: "1.5rem",
               }}
             >
-              <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="font-normal !mt-0">{item.location}</p>
+              <h3 className="font-semibold capitalize">{lang ==='en' ? item.title : item.title_es}</h3>
+              <p className="font-normal !mt-0">{lang ==='en' ? item.location : item.location_es }</p>
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-                {item.description}
+                {lang ==='en' ? item.description : item.description_es}
               </p>
             </VerticalTimelineElement>
           </React.Fragment>

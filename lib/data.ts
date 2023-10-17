@@ -12,48 +12,41 @@ import tradingTX from "@/public/tradingTX.png";
 export const links = [
   {
     name: "Home",
+    name_es: "Inicio",
+    section: "Home",
     hash: "#home",
   },
   {
     name: "About",
+    name_es: "Sobre mí",
+    section: "About",
     hash: "#about",
   },
   {
     name: "Projects",
+    name_es: "Proyectos",
+    section: "Projects",
     hash: "#projects",
   },
   {
     name: "Skills",
+    name_es: "Habilidades",
+    section: "Skills",
     hash: "#skills",
   },
   {
     name: "Experience",
+    name_es: "Experiencia",
+    section: "Experience",
     hash: "#experience",
   },
   {
     name: "Contact",
+    name_es: "Contacto",
+    section: "Contact",
     hash: "#contact",
   },
 ] as const;
-
-/* export const navigationLinks = {
-  en: [
-    { name: "Home", hash: "#home" },
-    { name: "About", hash: "#about" },
-    { name: "Projects", hash: "#projects" },
-    { name: "Skills", hash: "#skills" },
-    { name: "Experience", hash: "#experience" },
-    { name: "Contact", hash: "#contact" },
-  ],
-  es: [
-    { name: "Inicio", hash: "#home" },
-    { name: "Acerca de", hash: "#about" },
-    { name: "Proyectos", hash: "#projects" },
-    { name: "Habilidades", hash: "#skills" },
-    { name: "Experiencia", hash: "#experience" },
-    { name: "Contacto", hash: "#contact" },
-  ],
-}; */
 
 
 export const experiencesData = [
@@ -62,6 +55,10 @@ export const experiencesData = [
     location: "Buenos Aires, Argentina (Remote)",
     description:
     'Participated in a team of 5 (UX/UI Designers, Developers, and Community Manager) to launch the landing page for "Geo Papel". Used React (Vite and ChakraUI) for the interface; created a backend with Node/Express, integrating the Notion API for code-free edits, and managed deployment on cPanel',
+    title_es: "Desarrollador Full Stack",
+    location_es: "Buenos Aires, Argentina (Remoto)",
+    description_es:
+    'Participé en un equipo de 5 (Diseñadores UX/UI, Desarrolladores y Community Manager) para lanzar la página de inicio de "Geo Papel". Utilicé React (Vite y ChakraUI) para la interfaz; creé un backend con Node/Express, integrando la API de Notion para ediciones sin código y gestioné el despliegue en cPanel',
     icon: React.createElement(CgWorkAlt),
     date: "2023",
   },
@@ -70,6 +67,10 @@ export const experiencesData = [
     location: "Coderhouse (Remote)",
     description:
       "I graduated after 1 year of studying. I immediately found a job as a front-end developer, ended up deploying a back-end as well.",
+      title_es: "Estudiante de Desarrollo Full-Stack",
+    location_es: "Coderhouse (Remoto)",
+    description_es:
+    "Me gradué después de 1 año de estudios. Inmediatamente encontré un trabajo como desarrollador front-end y terminé desplegando también un back-end.",
     icon: React.createElement(LuGraduationCap),
     date: "2022 - 2023",
   },
@@ -78,6 +79,10 @@ export const experiencesData = [
     location: "Morelia, México (Remote)",
     description:
       "Developed a backtester in Pine Script to analyze historical results of automated trading strategies",
+      title_es: "Operador Financiero Algorítmico",
+    location_es: "Morelia, México (Remoto)",
+    description_es:
+    "Desarrollé un backtester en Pine Script para analizar resultados históricos de estrategias de trading automatizadas",
     icon: React.createElement(CgWorkAlt),
     date: "2022 - 2023",
   },
@@ -86,6 +91,12 @@ export const experiencesData = [
     location: "Oracle & Alura Latam (Remote)",
     description:
     "Graduated from Oracle Next Education (ONE) program; Acquired in-depth knowledge in front-end development using React. Gained foundational skills in MySQL and Oracle Cloud Infrastructure (OCI). Honed my expertise in Python, specifically for Data Science applications.",
+    title_es: "Estudiante de Oracle Next Education",
+    location_es: "Oracle y Alura Latam (Remoto)",
+    description_es:
+    "Me gradué del programa Oracle Next Education (ONE); adquirí un conocimiento profundo en desarrollo front-end usando React. Obtuve habilidades fundamentales en MySQL e Infraestructura en la nube de Oracle (OCI). Perfeccioné mi experiencia en Python, específicamente para aplicaciones de Ciencia de Datos.",
+
+
     icon: React.createElement(LuGraduationCap),
     date: "2022 - 2023",
   },
@@ -97,6 +108,8 @@ export const projectsData = [
     title: "Geo Papel",
     description:
       "Worked as a full-stack developer on this startup project for 2 months. Develop half of the front-end and full back-end with  Notion API Integration.",
+    description_es:
+      "Trabajé como desarrollador full-stack en este proyecto de startup durante 2 meses. Desarrollé la mitad del front-end y todo el back-end con la integración de la API de Notion.",
     tags: ["React", "Chakra UI", "Node.js", "Express", "Notion API", ],
     imageUrl: geopapel,
     repo: "https://github.com/Thayrov/geopapel",
@@ -105,7 +118,9 @@ export const projectsData = [
   {
     title: "Mandala App",
     description:
-      "Developed an app potentially for advertising and selling hand-colored mandalas by my wife using various painting techniques.",
+      "Developed an app for advertising and selling hand-colored mandalas by my wife.",
+    description_es:
+      "Desarrollé una aplicación para anunciar y vender mándalas pintados a mano por mi esposa.",
     tags: ["React", "Material UI", "React Router", "Firebase"],
     imageUrl: mandalaApp,
     repo: "https://github.com/Thayrov/mandala-app",
@@ -115,6 +130,8 @@ export const projectsData = [
     title: "Text Encryption App",
     description:
     "Created an app for secure message exchange with custom encryption keys. Managed the project using agile methods and Trello.",
+    description_es:
+    "Creé una aplicación para el intercambio seguro de mensajes con claves de cifrado personalizadas. Gestioné el proyecto utilizando métodos ágiles y Trello.",
     tags: ["Encryption", "JavaScript", "Agile Development", "Trello"],
     imageUrl: textEncryptionApp,
     repo: "https://github.com/Thayrov/ChallengeONE_EncriptadorTexto",
@@ -123,7 +140,9 @@ export const projectsData = [
   {
     title: "Trading Journal",
     description:
-      "Developed a trading tools platform that includes a position sizing calculator and trading journal. Created as an academic exercise for the Coderhouse JavaScript course.",
+      "Developed a trading tools platform that includes a position sizing calculator and trading journal.",
+    description_es:
+      "Desarrollé una plataforma de herramientas de trading que incluye una calculadora de tamaño de posición y un diario de trading.",
     tags: ["JavaScript", "Trading", "Calculator", "Bootstrap"],
     imageUrl: tradingTX,
     repo: "https://github.com/Thayrov/TradingJournal",
@@ -132,7 +151,9 @@ export const projectsData = [
   {
     title: "Mis Apuntes de Programación",
     description:
-      "Created a website to share notes, toolkits, and reflections from my Web Development course. Includes a 'Who Am I?' section and a contact page.",
+      "Created a website to share notes, toolkits, and reflections from my Web Development course.",
+    description_es:
+      "Creé un sitio web para compartir notas, kits de herramientas y reflexiones de mi curso de Desarrollo Web.",
     tags: ["Web Development", "HTML", "SASS", "Bootstrap"],
     imageUrl: misApuntesDeProgramacion,
     repo: "https://github.com/Thayrov/apuntes_de_programacion",
@@ -142,12 +163,13 @@ export const projectsData = [
     title: "E-commerce REST API",
     description:
       "Developed a REST API for managing user, product, and cart entities in an e-commerce platform.",
+    description_es:
+      "Desarrollé una API REST para gestionar entidades de usuario, producto y carrito en una plataforma de comercio electrónico.",
     tags: ["REST API", "MongoDB", "Authentication", "Express", "Testing", "Swagger"],
     imageUrl: ecommerceRestApi, 
     repo: "https://github.com/Thayrov/Backend",
     link: "https://thayrov-backend-dev.fl0.io/"
   },
-
 ] as const;
 
 export const skillsData = [

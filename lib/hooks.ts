@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 export function useSectionInView(sectionName: SectionName, defaultThreshold = 0.75) {
-  const threshold = sectionName === "Projects" ? 0.15 : defaultThreshold;
+  const threshold = sectionName === "Experience" ? 0.35 : "Projects" ? 0.15 : defaultThreshold;
 
   const { ref, inView } = useInView({
     threshold,

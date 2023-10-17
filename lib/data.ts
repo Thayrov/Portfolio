@@ -51,7 +51,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Full Stack Developer",
+    title: "Full-Stack Developer",
     location: "Buenos Aires, Argentina (Remote)",
     description:
     'Participated in a team of 5 (UX/UI Designers, Developers, and Community Manager) to launch the landing page for "Geo Papel". Used React (Vite and ChakraUI) for the interface; created a backend with Node/Express, integrating the Notion API for code-free edits, and managed deployment on cPanel',
@@ -172,71 +172,71 @@ export const projectsData = [
   },
 ] as const;
 
-export const skillsData = [
-  // Front-end
-  "HTML5",
-  "CSS3",
-  "SASS",
-  "Bootstrap",
-  "JavaScript",
-  "React",
-  "React Native",
-  "Redux",
-  "SweetAlert2",
-
-  // Back-end
-  "Node.js",
-  "Express",
-  "Mongo",
-  "MySQL",
-  "Firebase",
-  "Json-Server",
-  "Passport",
-  "Socket.io",
-  "Python",
-
-  // DevOps
-  "Docker",
-  "OCI",
-  "PM2",
-  "Nodemon",
-
-  // Testing
-  "Chai",
-  "Mocha",
-  "Supertest",
-
-  // Version Control
-  "Git",
-  "Github",
-
-  // Code Quality
-  "ESLint",
-  "Prettier",
-  
-  // API and Data Handling
-  "Axios",
-  "Cors",
-  "Dotenv",
-
-  // Middleware and Templates
-  "Express-Handlebars",
-  "Express-Session",
-  "Express-Compression",
-
-  // Utilities
-  "Faker",
-  "Mongoose",
-  "Multer",
-  "Nodemailer",
-  "Swagger",
-  "Winston",
-  "Cross-Env",
-  
-  // UI/UX Design
-  "Balsamiq",
-
-  // Automation and Notifications
-  "Concurrently",
-  "Bcrypt",
-] as const;
+export const skillsData = {
+  programming: [
+    "JavaScript",
+    "TypeScript",
+  ],  
+  frontend: [
+    "HTML5",
+    "CSS3",
+    "SASS",
+    "Tailwind CSS",
+    "Bootstrap",
+    "Material UI",
+    "Chakra UI",
+    "React",
+    "Next.js",
+    "Redux",
+    "SweetAlert2",
+    "Handlebars",
+  ],
+  backend: [
+    "Node.js",
+    "Express",
+    "Mongo",
+    "Mongoose",
+    "MySQL",
+    "Firebase",
+    "Json-Server",
+    "Passport",
+    "Socket.io",
+    "Python",
+    "Bcrypt",
+    "Axios",
+    "Cors",
+    "Dotenv",
+    "Multer",
+    "Nodemailer",
+    "Faker",
+  ],
+  mobile: [
+    "React Native",
+    "Expo",
+    "Android Studio",
+    "SQLite",
+  ],
+  devOps: [
+    "Docker",
+    "OCI",
+    "PM2",
+    "Cross-Env",
+  ],
+  testing: [
+    "Chai",
+    "Mocha",
+    "Supertest",
+  ],
+  "docs & logging": [
+    "Swagger",
+    "Winston",
+  ],
+  "code quality":[
+    "ESLint",
+    "Prettier",
+  ],
+  "version control":[
+    "Git",
+    "Github",
+  ],  
+} as const;

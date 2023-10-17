@@ -18,16 +18,16 @@ type LangProviderProps = {
 };
 
 export const LangProvider: React.FC<LangProviderProps> = ({ children }) => {
-  const [lang, setLang] = useState<Language>('es');
+  const [lang, setLang] = useState<Language>('en');
 
   const { activeSection, setActiveSection } = useActiveSectionContext(); // import this from the active section context
 
   const toggleLang = () => {
-    if (lang === 'es') {
-      setLang('en');
+    if (lang === 'en') {
+      setLang('es');
       setActiveSection(activeSection);
     } else {
-      setLang('es');
+      setLang('en');
       setActiveSection(activeSection);
     }
   };

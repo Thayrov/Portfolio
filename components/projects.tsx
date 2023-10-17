@@ -12,7 +12,7 @@ export default function Projects() {
   const { lang } = useLang(); 
 
   return (
-    <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
+    <section ref={ref} id="projects" className="scroll-mt-28 mb-28 mt-20">
       <SectionHeading>{lang ==='en' ?'My projects':'Mis Proyectos'}</SectionHeading>
       <div>
         {projectsData.map((project, index) => (

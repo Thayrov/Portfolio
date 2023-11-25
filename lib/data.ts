@@ -175,7 +175,7 @@ export const projectsData = [
     tags: ['REST API', 'MongoDB', 'Authentication', 'Express', 'Testing', 'Swagger'],
     imageUrl: ecommerceRestApi,
     repo: 'https://github.com/Thayrov/Backend',
-    link: 'https://thayrov-backend-dev.fl0.io/',
+    link: 'https://thayrov-backend.2.us-1.fl0.io/',
   },
 ] as const;
 

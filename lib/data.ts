@@ -190,6 +190,7 @@ export const skillsData = {
     'Bootstrap',
     'Material UI',
     'Chakra UI',
+    'Styled Components',
     'jQuery',
     'React',
     'Next.js',

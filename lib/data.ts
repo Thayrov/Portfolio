@@ -206,6 +206,8 @@ export const skillsData = {
     'Mongo',
     'Mongoose',
     'MySQL',
+    'Postgres',
+    'Sequelize',
     'Firebase',
     'Json-Server',
     'Passport',

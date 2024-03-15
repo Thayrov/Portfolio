@@ -217,7 +217,7 @@ export const skillsData = {
     'Handlebars',
   ],
   'authentication and session management': ['Express-Session', 'Passport', 'JWT', 'Bcrypt'],
-  'database': ['Mongo', 'MySQL', 'Postgres', 'Sequelize', 'Prisma', 'Mongoose', 'Firebase'],
+  'database': ['Mongo', 'MySQL', 'PostgreSQL', 'Sequelize', 'Prisma', 'Mongoose', 'Firebase'],
   'mobile': ['React Native', 'Expo', 'Android Studio', 'SQLite'],
   'devOps': ['Docker', 'OCI', 'PM2', 'Cross-Env'],
   'testing': ['Jest', 'Chai', 'Mocha', 'Supertest'],

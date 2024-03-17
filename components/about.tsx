@@ -25,7 +25,8 @@ export default function About() {
             As a <span className='font-medium'>web developer</span>, I have a solid foundation in
             <span className='font-medium'>
               {' '}
-              Typescript, Node JS, React, Next JS, Express, PostgreSQL and MongoDB
+              Typescript, Node JS, React, React Native, Redux Toolkit, Next JS, Express, PostgreSQL
+              and MongoDB
             </span>
             . My goal is to deepen my understanding of{' '}
             <span className='font-medium'>
@@ -63,7 +64,8 @@ export default function About() {
             Como <span className='font-medium'>desarrollador web</span>, tengo una base sólida en
             <span className='font-medium'>
               {' '}
-              Typescript, Node JS, React, Next JS, Express, PostgreSQL y MongoDB
+              Typescript, Node JS, React, React Native, Redux Toolkit, Next JS, Express, PostgreSQL
+              y MongoDB
             </span>
             . Mi objetivo es profundizar mi comprensión de{' '}
             <span className='font-medium'>

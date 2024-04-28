@@ -63,7 +63,7 @@ export default function Intro() {
             <p>
               <span className='font-bold'>Hello, I'm Thayrov.</span>
               <br />
-              I'm a <span className='font-bold'>full-stack developer</span> with over{' '}
+              I'm a <span className='font-bold'>full-stack developer</span> with over <br />
               <span className='font-bold'>two years</span> of experience.
               <br />I enjoy building <span className='italic'>websites and applications</span>.{' '}
               <br />
@@ -76,7 +76,11 @@ export default function Intro() {
             <p>
               <span className='font-bold'>Hola, soy Thayrov.</span> <br />
               Soy un <span className='font-bold'>desarrollador full-stack</span> con{' '}
-              <span className='font-bold'>más de dos años </span> de experiencia. <br />
+              <span className='font-bold'>
+                más de <br />
+                dos años{' '}
+              </span>{' '}
+              de experiencia. <br />
               Disfruto construyendo <span className='italic'>sitios web y aplicaciones</span>.{' '}
               <br />
               Especializándome en el ecosistema de{' '}

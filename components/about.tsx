@@ -22,11 +22,11 @@ export default function About() {
         <>
           <SectionHeading>About me</SectionHeading>
           <p className='mb-3'>
-            As a <span className='font-medium'>web developer</span>, I have a solid foundation in
+            I have experience in
             <span className='font-medium'>
               {' '}
-              Typescript, Node JS, React, React Native, Redux Toolkit, Next JS, Express, PostgreSQL
-              and MongoDB
+              Typescript, Node JS, React, React Native, Redux Toolkit, Next JS, Express, PostgreSQL,
+              MongoDB, GraphQL and Apollo Client
             </span>
             . My goal is to deepen my understanding of{' '}
             <span className='font-medium'>
@@ -35,7 +35,7 @@ export default function About() {
             .
           </p>
           <p className='mb-3'>
-            While I may be at the start of my development career, my previous roles in
+            My previous roles in
             <span className='font-medium'>
               {' '}
               customer service, sales, teaching, management, and designing
@@ -61,20 +61,20 @@ export default function About() {
         <>
           <SectionHeading>Sobre mí</SectionHeading>
           <p className='mb-3'>
-            Como <span className='font-medium'>desarrollador web</span>, tengo una base sólida en
+            Tengo experiencia en
             <span className='font-medium'>
               {' '}
-              Typescript, Node JS, React, React Native, Redux Toolkit, Next JS, Express, PostgreSQL
-              y MongoDB
+              Typescript, Node JS, React, React Native, Redux Toolkit, Next JS, Express, PostgreSQL,
+              MongoDB, GraphQL y Apollo Client
             </span>
-            . Mi objetivo es profundizar mi comprensión de{' '}
+            . Mi objetivo es profundizar mi comprensión en{' '}
             <span className='font-medium'>
               arquitectura de software, soluciones en la nube y metodologías ágiles
             </span>
             .
           </p>
           <p className='mb-3'>
-            Aunque esté al inicio de mi carrera como desarrollador, mis roles anteriores en
+            Mis roles anteriores en
             <span className='font-medium'>
               {' '}
               atención al cliente, ventas, enseñanza, gestión y diseño

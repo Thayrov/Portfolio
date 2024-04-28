@@ -63,10 +63,12 @@ export default function Intro() {
             <p>
               <span className='font-bold'>Hello, I'm Thayrov.</span>
               <br />
-              I'm a <span className='font-bold'>full-stack developer</span> with{' '}
-              <span className='font-bold'>1 and a half years</span> of experience.
-              <br />I enjoy building <span className='italic'>sites & apps</span>. <br />
-              My focus is <span className='underline'>the MERN stack</span>.
+              I'm a <span className='font-bold'>full-stack developer</span> with over{' '}
+              <span className='font-bold'>two years</span> of experience.
+              <br />I enjoy building <span className='italic'>websites and applications</span>.{' '}
+              <br />
+              specializing in the <span className='underline'>JavaScript/TypeScript</span>{' '}
+              ecosystem.
             </p>
           </div>
         ) : (
@@ -74,9 +76,11 @@ export default function Intro() {
             <p>
               <span className='font-bold'>Hola, soy Thayrov.</span> <br />
               Soy un <span className='font-bold'>desarrollador full-stack</span> con{' '}
-              <span className='font-bold'>1 año y medio</span> de experiencia. <br />
-              Me gusta construir <span className='italic'>sitios y aplicaciones</span>. <br />
-              Mi enfoque es <span className='underline'>el stack MERN</span>.
+              <span className='font-bold'>más de dos años </span> de experiencia. <br />
+              Disfruto construyendo <span className='italic'>sitios web y aplicaciones</span>.{' '}
+              <br />
+              Especializándome en el ecosistema de{' '}
+              <span className='underline'>JavaScript/TypeScript</span>.
             </p>
           </div>
         )}

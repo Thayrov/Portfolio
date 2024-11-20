@@ -1,7 +1,6 @@
 'use client';
 
 import {BsArrowRight, BsLinkedin} from 'react-icons/bs';
-
 import {FaGithubSquare} from 'react-icons/fa';
 import {HiDownload} from 'react-icons/hi';
 import Image from 'next/image';
@@ -30,7 +29,7 @@ export default function Intro() {
             }}>
             <Image
               src='https://res.cloudinary.com/dhjlbf6xs/image/upload/v1684949820/Personal/Profile_pic_2022_f4kywf.jpg'
-              alt='Thayrov portrait'
+              alt='Portrait of Thayrov Garcia'
               width='300'
               height='300'
               quality='95'
@@ -48,7 +47,9 @@ export default function Intro() {
               stiffness: 125,
               delay: 0.1,
               duration: 0.7,
-            }}>
+            }}
+            role='img'
+            aria-label='Waving hand'>
             👋
           </motion.span>
         </div>
@@ -59,34 +60,27 @@ export default function Intro() {
         initial={{opacity: 0, y: 100}}
         animate={{opacity: 1, y: 0}}>
         {lang === 'en' ? (
-          <div>
+          <article>
             <p>
               <span className='font-bold'>Hello, I'm Thayrov.</span>
               <br />
-              I'm a <span className='font-bold'>full-stack developer</span> with over <br />
-              <span className='font-bold'>two years</span> of experience.
-              <br />I enjoy building <span className='italic'>websites and applications</span>.{' '}
+              <span className='font-bold'>Web and mobile developer</span>
               <br />
-              specializing in the <span className='underline'>JavaScript/TypeScript</span>{' '}
-              ecosystem.
+              with <span className='font-bold'>two and a half years of experience</span>
+              <br /> in the <span className='underline'>JavaScript/TypeScript</span> ecosystem.
             </p>
-          </div>
+          </article>
         ) : (
-          <div>
+          <article>
             <p>
               <span className='font-bold'>Hola, soy Thayrov.</span> <br />
-              Soy un <span className='font-bold'>desarrollador full-stack</span> con{' '}
-              <span className='font-bold'>
-                más de <br />
-                dos años{' '}
-              </span>{' '}
-              de experiencia. <br />
-              Disfruto construyendo <span className='italic'>sitios web y aplicaciones</span>.{' '}
+              <span className='font-bold'>Desarrollador web y mobile</span>
               <br />
-              Especializándome en el ecosistema de{' '}
-              <span className='underline'>JavaScript/TypeScript</span>.
+              con <span className='font-bold'>dos años y medio de experiencia</span>
+              <br />
+              en el ecosistema de <span className='underline'>JavaScript/TypeScript</span>.
             </p>
-          </div>
+          </article>
         )}
       </motion.h1>
 
@@ -105,7 +99,10 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}>
           {lang === 'en' ? 'Contact me here' : 'Contáctame aquí'}{' '}
-          <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
+          <BsArrowRight
+            className='opacity-70 group-hover:translate-x-1 transition'
+            aria-hidden='true'
+          />
         </Link>
 
         <a
@@ -117,21 +114,28 @@ export default function Intro() {
           }
           download>
           {lang === 'en' ? 'Download' : 'Descargar'} CV{' '}
-          <HiDownload className='opacity-60 group-hover:translate-y-1 transition' />
+          <HiDownload
+            className='opacity-60 group-hover:translate-y-1 transition'
+            aria-hidden='true'
+          />
         </a>
         <div className='flex gap-2'>
           <a
             className='bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60'
             href='https://www.linkedin.com/in/thayrovg/'
-            target='_blank'>
-            <BsLinkedin />
+            target='_blank'
+            rel='noopener noreferrer'
+            aria-label='LinkedIn profile'>
+            <BsLinkedin aria-hidden='true' />
           </a>
 
           <a
             className='bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60'
             href='https://github.com/Thayrov'
-            target='_blank'>
-            <FaGithubSquare />
+            target='_blank'
+            rel='noopener noreferrer'
+            aria-label='GitHub profile'>
+            <FaGithubSquare aria-hidden='true' />
           </a>
         </div>
       </motion.div>

@@ -27,10 +27,10 @@ export const links = [
     hash: '#about',
   },
   {
-    name: 'Projects',
-    name_es: 'Proyectos',
-    section: 'Projects',
-    hash: '#projects',
+    name: 'Experience',
+    name_es: 'Experiencia',
+    section: 'Experience',
+    hash: '#experience',
   },
   {
     name: 'Skills',
@@ -39,10 +39,10 @@ export const links = [
     hash: '#skills',
   },
   {
-    name: 'Experience',
-    name_es: 'Experiencia',
-    section: 'Experience',
-    hash: '#experience',
+    name: 'Projects',
+    name_es: 'Proyectos',
+    section: 'Projects',
+    hash: '#projects',
   },
   {
     name: 'Contact',
@@ -53,6 +53,18 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+  {
+    title: 'Senior Software Developer',
+    location: 'Philadelphia, Pennsylvania, United States (Remote)',
+    description:
+      'Developed web and mobile applications using React, React Native, Redux, Express, Node.js, and MySQL. Collaborated in an agile team following SCRUM methodologies to ensure timely deliveries and iterative feedback. Created reusable and efficient components for navigation and the management of tasks, reminders, and notifications.',
+    title_es: 'Desarrollador Senior de Software',
+    location_es: 'Filadelfia, Pensilvania, Estados Unidos (Remoto)',
+    description_es:
+      'Desarrollé aplicaciones web y móviles utilizando React, React Native, Redux, Express, Node.js y MySQL. Colaboré en un equipo ágil siguiendo metodologías SCRUM para asegurar entregas a tiempo y feedback iterativo. Creé componentes reutilizables y eficientes para la navegación y el manejo de tareas, recordatorios y notificaciones.',
+    icon: React.createElement(CgWorkAlt),
+    date: '• Jun 2024 - Present •',
+  },
   {
     title: 'Front End Developer',
     location: 'Montevideo, Uruguay (Part Time, Remote)',
@@ -186,7 +198,6 @@ export const experiencesData = [
     date: '• 2005 - 2022 •',
   },
 ] as const;
-
 export const projectsData = [
   {
     title: 'Mercadillo Cívico',
@@ -328,11 +339,14 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = {
-  'programming': ['JavaScript', 'TypeScript', 'Python'],
-  'frontend': [
+  'programming': ['JavaScript', 'TypeScript', 'Python', 'Java', 'Go'],
+  'frontend-web': [
     'HTML5',
     'jQuery',
     'React',
+    'React router DOM',
+    'Formik',
+    'Yup',
     'Next.js',
     'Redux',
     'Redux Toolkit',
@@ -366,7 +380,7 @@ export const skillsData = {
   'authentication and session management': ['Express-Session', 'Passport', 'JWT', 'Bcrypt'],
   'database': ['Mongo', 'MySQL', 'PostgreSQL', 'Sequelize', 'Prisma', 'Mongoose', 'Firebase'],
   'API management': ['Axios', 'Fetch API', 'GraphQL', 'Apollo Client', 'Swagger', 'Insomnia'],
-  'mobile': ['React Native', 'Expo', 'Android Studio', 'SQLite'],
+  'mobile': ['React Native', 'Expo', 'Xcode', 'Android Studio', 'SQLite'],
   'devOps': ['Docker', 'OCI', 'PM2', 'Cross-Env'],
   'testing': ['Jest', 'Chai', 'Mocha', 'Supertest'],
   'code quality & logging': ['ESLint', 'Prettier', 'Husky', 'Lint-Staged', 'Winston', 'Morgan'],

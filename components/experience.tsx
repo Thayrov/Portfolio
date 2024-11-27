@@ -17,7 +17,7 @@ export default function Experience() {
   const {lang} = useLang();
 
   return (
-    <section id='experience' ref={ref} className='scroll-mt-28 mb-28 sm:mb-30 max-w-[53rem] mt-20'>
+    <section id='experience' ref={ref} className='scroll-mt-28 sm:mb-30 max-w-[53rem]'>
       <SectionHeading>{lang === 'en' ? 'My experience' : 'Mi Experiencia'}</SectionHeading>
       <VerticalTimeline lineColor=''>
         {experiencesData.map((item, index) => (

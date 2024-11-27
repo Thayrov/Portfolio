@@ -14,9 +14,9 @@ export default function Home() {
       <About />
       <SectionDivider />
       <Experience />
-      <Skills />
-      <SectionDivider />
       <Projects />
+      <SectionDivider />
+      <Skills />
       <SectionDivider />
       <Contact />
     </main>

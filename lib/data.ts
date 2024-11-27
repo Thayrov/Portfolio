@@ -33,16 +33,16 @@ export const links = [
     hash: '#experience',
   },
   {
-    name: 'Skills',
-    name_es: 'Habilidades',
-    section: 'Skills',
-    hash: '#skills',
-  },
-  {
     name: 'Projects',
     name_es: 'Proyectos',
     section: 'Projects',
     hash: '#projects',
+  },
+  {
+    name: 'Skills',
+    name_es: 'Habilidades',
+    section: 'Skills',
+    hash: '#skills',
   },
   {
     name: 'Contact',

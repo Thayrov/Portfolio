@@ -56,36 +56,36 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'
+        className='mb-10 mt-4 px-4 text-2xl font-normal !leading-[1.5] sm:text-4xl'
         initial={{opacity: 0, y: 100}}
         animate={{opacity: 1, y: 0}}>
         {lang === 'en' ? (
           <article>
             <p>
-              <span className='font-bold'>Hello, I'm Thayrov.</span>
+              Hello, I'm <span className='font-bold'>Thayrov</span>!
               <br />
               <span className='font-bold'>Web and mobile developer</span>
               <br />
-              with <span className='font-bold'>two and a half years of experience</span>
-              <br /> in the <span className='underline'>JavaScript/TypeScript</span> ecosystem.
+              with <span className='font-bold'>two and a half years </span>of experience
+              <br /> in the <span className='font-bold'>JavaScript/TypeScript</span> ecosystem.
             </p>
           </article>
         ) : (
           <article>
             <p>
-              <span className='font-bold'>Hola, soy Thayrov.</span> <br />
+              ¡Hola, soy<span className='font-bold'> Thayrov</span>! <br />
               <span className='font-bold'>Desarrollador web y mobile</span>
               <br />
-              con <span className='font-bold'>dos años y medio de experiencia</span>
+              con <span className='font-bold'>dos años y medio </span>de experiencia
               <br />
-              en el ecosistema de <span className='underline'>JavaScript/TypeScript</span>.
+              en el ecosistema de <span className='font-bold'>JavaScript/TypeScript</span>.
             </p>
           </article>
         )}
       </motion.h1>
 
       <motion.div
-        className='mb-20 flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium'
+        className='mb-20 sm:mb-0 flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium'
         initial={{opacity: 0, y: 100}}
         animate={{opacity: 1, y: 0}}
         transition={{
@@ -93,20 +93,20 @@ export default function Intro() {
         }}>
         <Link
           href='#contact'
-          className='group bg-gray-900 dark:bg-[#3a414b] text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'
+          className='group bg-gray-900 dark:bg-[#3a414b] text-white px-8 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'
           onClick={() => {
             setActiveSection('Contact');
             setTimeOfLastClick(Date.now());
           }}>
           {lang === 'en' ? 'Contact me here' : 'Contáctame aquí'}{' '}
           <BsArrowRight
-            className='opacity-70 group-hover:translate-x-1 transition'
+            className='opacity-70 group-hover:translate-x-2 transition'
             aria-hidden='true'
           />
         </Link>
 
         <a
-          className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10'
+          className='group bg-white px-8 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10'
           href={
             lang === 'en'
               ? '/ThayrovGarcia_WebDeveloper_CV_EN.pdf'
@@ -115,11 +115,11 @@ export default function Intro() {
           download>
           {lang === 'en' ? 'Download' : 'Descargar'} CV{' '}
           <HiDownload
-            className='opacity-60 group-hover:translate-y-1 transition'
+            className='opacity-60 group-hover:translate-y-[1px] transition'
             aria-hidden='true'
           />
         </a>
-        <div className='flex gap-2'>
+        <div className='flex gap-x-4'>
           <a
             className='bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60'
             href='https://www.linkedin.com/in/thayrovg/'

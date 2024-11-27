@@ -63,7 +63,7 @@ export const experiencesData = [
     description_es:
       'Desarrollé aplicaciones web y móviles utilizando React, React Native, Redux, Express, Node.js y MySQL. Colaboré en un equipo ágil siguiendo metodologías SCRUM para asegurar entregas a tiempo y feedback iterativo. Creé componentes reutilizables y eficientes para la navegación y el manejo de tareas, recordatorios y notificaciones.',
     icon: React.createElement(CgWorkAlt),
-    date: '• Jun 2024 - Present •',
+    date: 'Jun 2024 - Present',
   },
   {
     title: 'Front End Developer',
@@ -75,7 +75,7 @@ export const experiencesData = [
     description_es:
       'Desarrollé la interfaz de usuario y la lógica de conexión con API para software EMS utilizando TypeScript, React, Redux Toolkit y Tailwind CSS como parte de un equipo de dos personas, incluido un desarrollador senior que supervisaba mi trabajo. Seguí metodología SCRUM para asegurar entregas a tiempo y feedback iterativo',
     icon: React.createElement(CgWorkAlt),
-    date: '• Nov 2023 - Present •',
+    date: 'Nov 2023 - Present',
   },
   {
     title: 'Team Lead and Front End Developer',
@@ -87,7 +87,7 @@ export const experiencesData = [
     description_es:
       'Dirigí un equipo de desarrollo de 8 personas bajo la metodología SCRUM, enfocándome en el desarrollo de front-end utilizando React, Redux Toolkit y una combinación de Material UI con Tailwind CSS para la interfaz de usuario. Implementé Husky, Lint-staged, ESLint y Prettier, vinculados a través de Issues y PRs de GitHub, para mantener estándares de desarrollo rigurosos.',
     icon: React.createElement(CgWorkAlt),
-    date: '• Feb 2024 - Mar 2024 •',
+    date: 'Feb 2024 - Mar 2024',
   },
   {
     title: 'Freelance Full Stack Developer',
@@ -99,7 +99,7 @@ export const experiencesData = [
     description_es:
       'Desarrollé una plataforma web responsiva usando Next.js y Tailwind CSS. Integré servicios de correo electrónico y optimicé la gestión de estados con React Context y Resend. Realicé una migración fluida del sitio de Ionos a Vercel, mejorando el rendimiento y la escalabilidad.',
     icon: React.createElement(CgWorkAlt),
-    date: '• Oct 2023 - Mar 2024 •',
+    date: 'Oct 2023 - Mar 2024',
   },
   {
     title: 'Full-Stack Developer',
@@ -111,7 +111,7 @@ export const experiencesData = [
     description_es:
       'Participé en un equipo de 5 (Diseñadores UX/UI, Desarrolladores y Community Manager) para lanzar la página de inicio de "Geo Papel". Utilicé React (Vite y ChakraUI) para la interfaz; creé un backend con Node/Express, integrando la API de Notion para ediciones sin código y gestioné el despliegue en cPanel',
     icon: React.createElement(CgWorkAlt),
-    date: '• Jun 2023 – Aug 2023 •',
+    date: 'Jun 2023 – Aug 2023',
   },
   /* {
     title: 'Full-Stack Developer Student',
@@ -135,7 +135,7 @@ export const experiencesData = [
     description_es:
       'Diseñé y ejecuté tres estrategias de trading automatizadas utilizando Pine Script y APIs especializadas. Desarrollé software personalizado de backtesting para la evaluación de estrategias. Integré habilidades de desarrollo web con análisis cuantitativo y programación financiera para mejorar las soluciones de trading.',
     icon: React.createElement(CgWorkAlt),
-    date: '• May 2022 - Oct 2023 •',
+    date: 'May 2022 - Oct 2023',
   },
   /*  {
     title: 'Oracle Next Education Student',
@@ -159,7 +159,7 @@ export const experiencesData = [
     description_es:
       'Impartí un curso sobre Git y GitHub, mejorando la colaboración estudiantil a través de proyectos prácticos y flujos de trabajo automatizados. Facilité la iniciación del bootcamp para nuevos estudiantes, promoviendo un ambiente de aprendizaje colaborativo y contribuyendo al desarrollo de la comunidad. Lideré el diseño y ejecución de un proyecto que simulaba entrevistas técnicas, mejorando significativamente la experiencia educativa.',
     icon: React.createElement(CgWorkAlt),
-    date: '• Jan 2024 - Apr 2024 •',
+    date: 'Jan 2024 - Apr 2024',
   },
   {
     title: 'Co-Founder and Organizer, Henry CodeChallenge Fest',
@@ -171,7 +171,7 @@ export const experiencesData = [
     description_es:
       'Co-fundé y organicé un torneo de lógica JavaScript en Henry Bootcamp, diseñando reglas y seleccionando ejercicios para garantizar un entorno justo y competitivo.',
     icon: React.createElement(CgWorkAlt),
-    date: '• Jan 2024 - Apr 2024 •',
+    date: 'Jan 2024 - Apr 2024',
   },
   {
     title: 'Bootcamp Pre-Course Assistant for Full-Stack Development Students',
@@ -183,7 +183,7 @@ export const experiencesData = [
     description_es:
       'Guié a los estudiantes a través de ejercicios de JavaScript previos a la admisión y configuraciones de herramientas, y dicté clases en vivo sobre mejores prácticas de HTML/CSS y JavaScript, preparándolos para los desafíos del bootcamp.',
     icon: React.createElement(CgWorkAlt),
-    date: '• Jan 2024 - Mar 2024 •',
+    date: 'Jan 2024 - Mar 2024',
   },
   {
     title: 'Diverse Roles',
@@ -195,7 +195,7 @@ export const experiencesData = [
     description_es:
       'Adquirí una amplia experiencia en diversas disciplinas: servicio al cliente, ventas, enseñanza, gestión y diseño. Reconocido por logros excepcionales en ventas, lideré estrategias de rebranding, desarrollé herramientas de gestión de datos y asesoré en rendimiento académico.',
     icon: React.createElement(CgWorkAlt),
-    date: '• 2005 - 2022 •',
+    date: '2005 - 2022',
   },
 ] as const;
 export const projectsData = [

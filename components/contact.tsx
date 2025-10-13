@@ -75,6 +75,16 @@ export default function Contact() {
 
           toast.success(lang === 'en' ? 'Email sent successfully!' : 'Email enviado exitosamente!');
         }}>
+        {/* Honeypot field - hidden from real users but bots will fill it */}
+        <input
+          type='text'
+          name='website'
+          className='absolute left-[-9999px]'
+          tabIndex={-1}
+          autoComplete='off'
+          aria-hidden='true'
+        />
+        
         <label htmlFor='senderEmail' className='sr-only'>
           {lang === 'en' ? 'Your email' : 'Tu email'}
         </label>

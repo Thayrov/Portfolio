@@ -10,11 +10,11 @@ import { headers } from "next/headers";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Blocked email addresses and domains
-const BLOCKED_EMAILS = [
+const BLOCKED_EMAILS: string[] = [
   "ikaralaficoj94@gmail.com", // The specific spammer you mentioned
 ];
 
-const BLOCKED_DOMAINS = [
+const BLOCKED_DOMAINS: string[] = [
   // Add suspicious domains here if needed
 ];
 

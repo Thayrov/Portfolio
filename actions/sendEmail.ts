@@ -5,7 +5,6 @@ import { checkRateLimit } from "@/lib/rate-limit";
 import ContactFormEmail from "@/email/contact-form-email";
 import React from "react";
 import { Resend } from "resend";
-// @ts-expect-error
 import { headers } from "next/headers";
 
 const resend = new Resend(process.env.RESEND_API_KEY);

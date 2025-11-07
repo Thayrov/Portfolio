@@ -2,7 +2,6 @@
 
 import { FaPaperPlane } from "react-icons/fa";
 import React from "react";
-// @ts-expect-error
 import { useFormStatus } from "react-dom";
 import { useLang } from "@/context/lang-context";
 

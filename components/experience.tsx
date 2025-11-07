@@ -17,7 +17,7 @@ export default function Experience() {
   const {lang} = useLang();
 
   return (
-    <section id='experience' ref={ref} className='scroll-mt-28 sm:mb-30 max-w-[53rem]'>
+    <section id='experience' ref={ref} className='scroll-mt-28 sm:mb-30 max-w-212'>
       <SectionHeading>{lang === 'en' ? 'My experience' : 'Mi Experiencia'}</SectionHeading>
       <VerticalTimeline lineColor=''>
         {experiencesData.map((item, index) => (
@@ -37,7 +37,7 @@ export default function Experience() {
                     : '0.4rem solid rgba(255, 255, 255, 0.5)',
               }}
               date={item.date}
-              dateClassName='min-[1170px]:!px-2'
+              dateClassName='min-[1170px]:px-2!'
               icon={item.icon}
               iconStyle={{
                 background: theme === 'light' ? 'white' : 'rgba(255, 255, 255, 0.15)',
@@ -47,10 +47,10 @@ export default function Experience() {
                 <h3 className='font-semibold capitalize pb-1'>
                   {lang === 'en' ? item.title : item.title_es}
                 </h3>
-                <p className='!text-sm !font-light !mt-0 pb-4'>
+                <p className='text-sm! font-light! mt-0! pb-4'>
                   {lang === 'en' ? item.location : item.location_es}
                 </p>
-                <p className='!mt-1 !font-normal text-gray-700 dark:text-white/75'>
+                <p className='mt-1! font-normal! text-gray-700 dark:text-white/75'>
                   {lang === 'en' ? item.description : item.description_es}
                 </p>
               </article>

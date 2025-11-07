@@ -17,7 +17,7 @@ export default function Intro() {
   const {lang} = useLang();
 
   return (
-    <section ref={ref} id='home' className='max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
+    <section ref={ref} id='home' className='max-w-200 text-center sm:mb-0 scroll-mt-400'>
       <div className='flex items-center justify-center'>
         <div className='relative'>
           <motion.div
@@ -34,12 +34,12 @@ export default function Intro() {
               height='300'
               quality='95'
               priority={true}
-              className='h-30 w-30 rounded-full object-cover border-[0.15rem] border-white shadow-xl'
+              className='h-48 w-48 rounded-full object-cover border-[0.15rem] border-white shadow-xl'
             />
           </motion.div>
 
           <motion.span
-            className='absolute bottom-0 right-0 text-7xl'
+            className='absolute bottom-0 right-0 text-6xl'
             initial={{opacity: 0, scale: 0}}
             animate={{opacity: 1, scale: 1}}
             transition={{
@@ -56,7 +56,7 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className='mb-10 mt-4 px-4 text-2xl font-normal !leading-[1.5] sm:text-4xl'
+        className='mb-10 mt-4 px-4 text-2xl font-normal leading-normal! sm:text-4xl'
         initial={{opacity: 0, y: 100}}
         animate={{opacity: 1, y: 0}}>
         {lang === 'en' ? (
@@ -93,7 +93,7 @@ export default function Intro() {
         }}>
         <Link
           href='#contact'
-          className='group bg-gray-900 dark:bg-[#3a414b] text-white px-8 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'
+          className='group bg-gray-900 dark:bg-[#3a414b] text-white px-8 py-3 flex items-center gap-2 rounded-full outline-hidden focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'
           onClick={() => {
             setActiveSection('Contact');
             setTimeOfLastClick(Date.now());
@@ -106,7 +106,7 @@ export default function Intro() {
         </Link>
 
         <a
-          className='group bg-white px-8 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10'
+          className='group bg-white px-8 py-3 flex items-center gap-2 rounded-full outline-hidden focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10'
           href={
             lang === 'en'
               ? '/ThayrovGarcia_WebDeveloper_CV_EN.pdf'
@@ -115,7 +115,7 @@ export default function Intro() {
           download>
           {lang === 'en' ? 'Download' : 'Descargar'} CV{' '}
           <HiDownload
-            className='opacity-60 group-hover:translate-y-[1px] transition'
+            className='opacity-60 group-hover:translate-y-px transition'
             aria-hidden='true'
           />
         </a>

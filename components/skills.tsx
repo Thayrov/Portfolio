@@ -29,7 +29,7 @@ export default function Skills() {
     <section
       id='skills'
       ref={ref}
-      className='max-w-[48rem] scroll-mt-28 text-center mb-20 sm:mb-0 '>
+      className='max-w-3xl scroll-mt-28 text-center mb-20 sm:mb-0 '>
       <SectionHeading>{lang === 'en' ? 'My skills' : 'Mis Habilidades'}</SectionHeading>
       {Object.entries(skillsData).map(([category, skills]) => (
         <div key={category} className='mb-6'>
